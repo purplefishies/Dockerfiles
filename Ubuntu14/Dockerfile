@@ -34,7 +34,7 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
 # Add user "embeddeduse" to sudoers. Then, the user can install Linux packages in the container.
-ENV USER_NAME deepika
+ENV USER_NAME jdamon
 RUN echo "${USER_NAME} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${USER_NAME} && \
     chmod 0440 /etc/sudoers.d/${USER_NAME}
 
@@ -58,4 +58,4 @@ WORKDIR /public/Work
 
 #RUN which git-lfs > /dev/null || apt-get install git-lfs || \
 #  (curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get install git-lfs)
-USER deepika
+USER jdamon
