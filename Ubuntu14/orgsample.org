@@ -1,0 +1,50 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+LATEX_HEADER: \usepackage{xparse}
+#+LATEX_HEADER: \usepackage{minted}
+#+LATEX_HEADER: \input{embed.tex}
+#+LATEX_HEADER: \usepackage{xcolor}
+#+LATEX_HEADER: \hypersetup{
+#+LATEX_HEADER:     colorlinks,
+#+LATEX_HEADER:     linkcolor={red!50!black},
+#+LATEX_HEADER:     citecolor={blue!50!black},
+#+LATEX_HEADER:     urlcolor={blue!80!black}
+#+LATEX_HEADER: }
+#+LATEX_HEADER: \usepackage[backend=bibtex]{biblatex}   % bibliography
+#+LATEX_HEADER: \addbibresource{/home/jimi_damon/Dropbox/org/Zettelkasten/Zettelkasten.bib}
+#+LATEX_HEADER: \usepackage[dvipsnames,svgnames]{xcolor}
+#+LATEX_HEADER: \hypersetup{colorlinks,linkcolor={red!50!black},citecolor={blue!50!black},urlcolor={blue!80!black}}
+#+LATEX_HEADER: \AtEveryBibitem{\clearfield{urlyear}
+#+LATEX_HEADER: \clearfield{urlmonth}}#
+#+LATEX_HEADER: \usepackage{indentfirst}
+#+LATEX_HEADER: \usepackage{multimedia}
+#+LATEX_HEADER: \usepackage[bigfiles]{pdfbase}
+#+LATEX_HEADER: \usepackage{media9}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage{tcolorbox}
+#+LATEX_HEADER: \usepackage{etoolbox}
+#+LATEX_HEADER: \addmediapath{.}
+#+LATEX_HEADER: \newcommand\Small{\fontsize{9}{9.2}\selectfont}
+#+LATEX_HEADER: \newcommand*\LSTfont{\Small\ttfamily\SetTracking{encoding=*}{-60}\lsstyle}
+#+LATEX_HEADER: \AtBeginEnvironment{quote}{\tiny}% Step font down one size relative to current font.
+#+LATEX_HEADER: \AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
+#+LATEX_HEADER: \setminted[bash]{ %
+#+LATEX_HEADER:     linenos=true,             % Line numbers
+#+LATEX_HEADER:     autogobble=false,          % Automatically remove common white space
+#+LATEX_HEADER:     frame=single,
+#+LATEX_HEADER:     framesep=2mm,
+#+LATEX_HEADER:     fontsize=\footnotesize,
+#+LATEX_HEADER: }
+#+LATEX_HEADER: \usemintedstyle{fruity}
+#+ANKI_DECK: DeepikaComingUpToSpeed
+#+OPTIONS: ^:nil 
+#+OPTIONS: num:1
+#+FILETAGS: :ccu:
+#+bibliography: /home/jimi_damon/Dropbox/org/Zettelkasten/Zettelkasten.bib
+
+
+*  Docker build
+
+Use the attached file Dockerfile_ubuntu14
+
+
+\inputminted{Dockerfile}{Dockerfile}
